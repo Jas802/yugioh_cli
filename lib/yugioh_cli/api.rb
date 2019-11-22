@@ -1,9 +1,9 @@
-class Yugioh::API
+class API
   def fetch
     url = "https://db.ygoprodeck.com/api/v5/cardinfo.php"
     response = HTTParty.get(url)
-    respone[0..19].each do ||
-      
+    response[0..19].each do |hash|
+      binding.pry
     end
   end
 end

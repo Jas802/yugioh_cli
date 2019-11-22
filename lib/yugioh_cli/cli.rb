@@ -1,7 +1,8 @@
-class Yugioh::CLI
+class CLI
   def start
-    Yugioh::API.new.fetch
-    Yugioh::Cards.all.each do |card|
+    API.new.fetch
+    Cards.all.each do |card|
       puts card.name
     end
+  end
 end
