@@ -1,12 +1,12 @@
 class Card
-  attr_accessor :name, :type, :attack, :defense
+  attr_accessor :name, :type, :desc, :card_sets
   @@all = []
   
-  def initialize(name, type, attack, defense)
+  def initialize(name, type, desc, card_sets)
     @name = name
     @type = type
-    @attack = attack
-    @defense = defense
+    @desc = desc
+    @card_prices = card_sets
     @@all << self
   end
   

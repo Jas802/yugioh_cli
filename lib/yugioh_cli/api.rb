@@ -3,11 +3,10 @@ class API
     url = "https://db.ygoprodeck.com/api/v5/cardinfo.php"
     response = HTTParty.get(url)
     response[0..19].each do |hash|
-      binding.pry
+    puts hash ["name"]
+    puts hash ["type"] if hash ["type"].include?("Spell Card")
+    puts hash ["card_sets"]
     end
   end
 end
 
-def begin
-  puts "It's your move!"
-end

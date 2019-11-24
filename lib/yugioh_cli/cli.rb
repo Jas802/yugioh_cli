@@ -1,8 +1,10 @@
 class CLI
   def start
     API.new.fetch
-    Cards.all.each do |card|
+    Card.all.each do |card|
       puts card.name
+      puts card.type
+      puts card.card_sets
     end
   end
 end
