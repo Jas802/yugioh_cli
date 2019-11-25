@@ -6,7 +6,7 @@ class Card
     @name = name
     @type = type
     @desc = desc
-    @card_prices = card_sets
+    @card_sets = card_sets
     @@all << self
   end
   
