@@ -1,8 +1,7 @@
 # YugiohCli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yugioh_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+It's time to duel!
+This gem is great if your a collector of the Yu-Gi-Oh! trading card game like me. It will allow you to get information about a card including it's name, the type of card it is, a description for Monster cards, and what card sets the card has been available in throughout the history of the game.
 
 ## Installation
 
