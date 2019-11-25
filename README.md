@@ -2,6 +2,7 @@
 
 It's time to duel!
 This gem is great if your a collector of the Yu-Gi-Oh! trading card game like me. It will allow you to get information about a card including it's name, the type of card it is, a description for Monster cards, and what card sets the card has been available in throughout the history of the game.
+It's your move!
 
 ## Installation
 
@@ -22,7 +23,7 @@ Or install it yourself as:
 ## Usage
 
 You know, just do it.
-Just kidding! bun/run.rb
+Just kidding! bin/run.rb
 
 ## Development
 
