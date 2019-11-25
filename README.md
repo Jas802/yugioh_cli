@@ -21,7 +21,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You know, just do it.
+Just kidding! bun/run.rb
 
 ## Development
 
