@@ -38,7 +38,7 @@ class CLI
   end
   
   def print_card(card)
-    puts "Isn't it just beautiful?"
+    puts " Here it is! Isn't it just beautiful?"
     puts card.name
     puts card.type
     puts card.desc
