@@ -22,8 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-You know, just do it.
-Just kidding! bin/run.rb
+After typing 'bin/run.rb', follow the given prompts.
 
 ## Development
 

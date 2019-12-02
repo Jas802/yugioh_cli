@@ -1,15 +1,14 @@
 class CLI
   
   def call
-    puts "Its your move!"
+    puts "I am Maximillion Pegasus, president of Industrial Illusions and creator of your favorite card game! I created some amazing cards today and here they are!"
+    fetch_cards
     start
   end
     
   def start
-    puts "I am Maximillion Pegasus, president of Industrial Illusions and creator of your favorite card game! I created some amazing cards today and here they are!"
-    print_cards
-    
-    puts "Which card do you want to know more about? Quickly now, we don't have all day!"
+   display_cards
+    puts "Which card number do you want to know more about? Quickly now, we don't have all day!"
     input = gets.strip
     
     card = Card.find(input.to_i)
@@ -27,10 +26,13 @@ class CLI
     end
   end
   
-  def print_cards
+  def fetch_cards
     API.new.fetch
-    Card.all.each do |card|
-      puts card.name
+  end
+  
+  def display_cards
+    Card.all.each.with_index(1) do |card, index|
+      puts "#{index} - #{card.name}"
       #puts card.type
       #puts card.desc
       #puts card.card_sets
@@ -38,7 +40,7 @@ class CLI
   end
   
   def print_card(card)
-    puts " Here it is! Isn't it just beautiful?"
+    puts "Here it is! Isn't it just beautiful?"
     puts card.name
     puts card.type
     puts card.desc
